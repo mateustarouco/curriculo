@@ -10,13 +10,15 @@ import {HttpClientModule} from "@angular/common/http";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
+import { EducationComponent } from './pages/education/education.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     AboutMeComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
