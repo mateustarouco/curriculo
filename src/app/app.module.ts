@@ -11,6 +11,9 @@ import {MatTooltipModule} from "@angular/material/tooltip";
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { EducationComponent } from './pages/education/education.component';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { GoalsComponent } from './pages/goals/goals.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { EducationComponent } from './pages/education/education.component';
     NavBarComponent,
     AboutMeComponent,
     ExperienceComponent,
-    EducationComponent
+    EducationComponent,
+    SkillsComponent,
+    GoalsComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

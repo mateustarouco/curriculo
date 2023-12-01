@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MatIconRegistry} from "@angular/material/icon";
 import { DomSanitizer } from '@angular/platform-browser';
 
@@ -7,7 +7,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'untitled';
 
   constructor(
@@ -30,5 +30,9 @@ export class AppComponent {
       'linkedin',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/linkedin.svg')
     );
+  }
+
+  ngOnInit(): void {
+    // AOS.init();
   }
 }
